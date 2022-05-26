@@ -3,21 +3,118 @@ $light-blue: hsl(233, 100%, 69%);
 $dark-grayish-blue: hsl(210, 10%, 33%);
 $grayish-blue: hsl(201, 11%, 66%);
 $font-size-body: 18px;
-$font-sans: 'Jamjuree', sans-serif;
+$font-sans: "Bai Jamjuree", sans-serif;
 $font-regular: 400;
 $font-semibold: 600;
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    border: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-family: $font-sans;
 }
 
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
+  background: url(../assets/images/bg-header-mobile.png) no-repeat;
 }
 
+.logo {
+  margin: 0 auto;
+  margin-block: 5em;
+  width: auto;
+  height: 5em;
+  display: flex;
+}
 
+.hero__title {
+  font-size: 1.7rem;
+  color: $dark-grayish-blue;
+  text-align: center;
+  padding-inline: 1.2em;
+}
+
+.hero__description {
+  line-height: 1.5;
+  color: $grayish-blue;
+  text-align: center;
+  margin-block-start: 2em;
+  padding-inline: 1.6em;
+}
+
+.button-flex {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  row-gap: 1.4em;
+  margin-block-start: 2em;
+}
+
+.button {
+  padding: 0.9em;
+  display: block;
+  border-radius: 3em;
+  width: 85%;
+  text-align: center;
+}
+
+.button-ios {
+  background-color: $strong-cyan;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+}
+
+.button-mac{
+    background-color: $light-blue;
+    color: white;
+}
+
+.section__snippets{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-block-start: 5em;
+    margin-inline: 3em;
+}
+
+.section__description{
+    text-align: center;
+    font-size: .9rem;
+    margin-block-start: 1em;
+    margin-inline: 3em;
+    line-height: 1.5;
+    color: $grayish-blue;
+}
+
+img{
+    max-width: 100%;
+    margin-inline: 2em;
+    width: auto;
+    height: 15em;
+    margin: 5em auto;
+    object-fit: contain;
+    display: flex;
+}
+
+.flex-items{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer ul{
+    text-align: center;
+    gap: 1em;
+}
+
+footer img{
+    object-fit: contain;
+    max-width: 100%;
+    height: 1.3em;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
