@@ -14,7 +14,7 @@ body {
   background: url(../assets/images/bg-header-mobile.png) no-repeat;
 }
 
-.logo {
+.header__logo {
   margin: 0 auto;
   margin-block: 5em;
   width: auto;
@@ -64,14 +64,15 @@ body {
   color: white;
 }
 
-.section__snippets {
+.container__title {
   text-align: center;
   font-size: 1.4rem;
+  color: hsl(210deg, 10%, 33%);
   margin-block-start: 5em;
   margin-inline: 3em;
 }
 
-.section__description {
+.container__description {
   text-align: center;
   font-size: 0.9rem;
   margin-block-start: 1em;
@@ -80,32 +81,126 @@ body {
   color: hsl(201deg, 11%, 66%);
 }
 
-img {
-  max-width: 100%;
-  margin-inline: 2em;
-  width: auto;
+.container__image {
   height: 15em;
-  margin: 5em auto;
+  margin-inline: 2em;
+  margin: 3.5em auto;
+  width: auto;
   object-fit: contain;
   display: flex;
+}
+
+.track-snippets {
+  margin: 5em auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 .flex-items {
   display: flex;
   text-align: center;
+  gap: 3em;
   flex-direction: column;
+}
+.flex-items__title {
+  color: hsl(210deg, 10%, 33%);
+}
+.flex-items__description {
+  margin-block-start: 1em;
+  color: hsl(201deg, 11%, 66%);
+  margin-inline: 2em;
 }
 
 footer ul {
   text-align: center;
   gap: 1em;
+  margin-block-end: 3em;
+  display: flex;
+  color: hsl(210deg, 10%, 33%);
+  flex-direction: column;
 }
 
 footer img {
   object-fit: contain;
   max-width: 100%;
   height: 1.3em;
-  width: auto;
+}
+
+.features__icon {
+  margin-block-start: 5em;
+  height: 2.4em;
   display: flex;
-  flex-direction: row;
+  margin: 4em auto;
+}
+
+.features__title {
+  text-align: center;
+  margin-block-start: 2em;
+  color: hsl(210deg, 10%, 33%);
+}
+
+.features__description {
+  text-align: center;
+  line-height: 1.5;
+  color: hsl(201deg, 11%, 66%);
+  margin-inline: 1.1em;
+  margin-block-start: 1em;
+}
+
+.company-partners {
+  display: flex;
+  margin-block-start: 6em;
+  gap: 4em;
+  flex-direction: column;
+}
+.company-partners img {
+  width: auto;
+  height: 1.9em;
+  object-fit: contain;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  max-width: 100%;
+}
+
+.small {
+  height: 3em;
+  width: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  .button-flex {
+    flex-direction: row;
+    display: flex;
+    place-content: center;
+  }
+
+  .button {
+    width: fit-content;
+  }
+
+  .flex-items {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-items div:nth-child(2) {
+    margin-block-start: 5em;
+    text-align: left;
+  }
+  .flex-items div img {
+    height: 23em;
+    position: relative;
+    right: 2em;
+  }
+
+  .container__description {
+    margin-inline: 30em;
+  }
 }
