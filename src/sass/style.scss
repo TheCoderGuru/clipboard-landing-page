@@ -245,7 +245,7 @@ img {
   }
 
   .container__image:nth-child(2){
-    height: 23em;
+    height: 30em;
     width: auto;
   }
 
@@ -256,8 +256,15 @@ img {
   }
 
   footer ul{
+    flex-direction: row;
+    place-content: center;
+  }
+
+  footer{
     display: flex;
-    
+    margin: 0 auto;
+    place-content: center;
+    place-items: center;
   }
 }
 
