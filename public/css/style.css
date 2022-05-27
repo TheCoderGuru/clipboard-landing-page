@@ -194,6 +194,7 @@ img {
   }
   .flex-items div:nth-child(2) {
     text-align: left;
+    margin-block: 4em;
   }
   .flex-items div img {
     height: 23em;
@@ -212,8 +213,8 @@ img {
     display: flex;
   }
 
-  .container__image:nth-child(2) {
-    height: 30em;
+  .container__image {
+    height: 17em;
     width: auto;
   }
 
@@ -226,12 +227,19 @@ img {
   footer ul {
     flex-direction: row;
     place-content: center;
+    place-items: center;
+    margin: 0 auto;
   }
 
   footer {
     display: flex;
     margin: 0 auto;
+    gap: 4em;
     place-content: center;
     place-items: center;
+  }
+
+  .socialicons {
+    gap: 2em;
   }
 }
