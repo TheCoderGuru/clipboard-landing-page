@@ -209,17 +209,19 @@ img {
     flex-direction: row;
     display: flex;
     place-content: center;
+    gap: 2em;
   }
 
   .button{
     width: fit-content;
   }
+
   .flex-items{
     display: flex;
     flex-direction: row;
+    gap: 4em;
 
     & div:nth-child(2){
-      margin-block-start: 5em;
       text-align: left;
     }
 
@@ -228,9 +230,35 @@ img {
       position: relative;
       right: 2em;
     }
+
+    &__description{
+      margin-inline-start: 0;
+    }
   }
 
   .container__description{
     margin-inline: 30em;
   }
+
+  .features-list{
+    display: flex;
+  }
+
+  .container__image:nth-child(2){
+    height: 23em;
+    width: auto;
+  }
+
+  .company-partners{
+    flex-direction: row;
+    justify-content: center;
+    margin-block: 12em;
+  }
+
+  footer ul{
+    display: flex;
+    
+  }
 }
+
+
