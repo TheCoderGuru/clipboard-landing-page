@@ -204,7 +204,9 @@ img {
 }
 
 @media only screen and ( min-width: 1440px ){
-
+  body{
+    background-size: contain;
+  }
   .button-flex{
     flex-direction: row;
     display: flex;
@@ -237,6 +239,10 @@ img {
     }
   }
 
+  .container__title{
+    font-size: 1.8rem;
+  }
+
   .container__description{
     margin-inline: 30em;
   }
@@ -247,6 +253,7 @@ img {
 
   .container__image{
     height: 17em;
+    margin: 5em auto;
     width: auto;
   }
 
@@ -263,6 +270,10 @@ img {
     margin: 0 auto;
   }
   
+  .company-partners img{
+    height: 2.7em;
+    width: auto;
+  }
 
   footer{
     display: flex;
